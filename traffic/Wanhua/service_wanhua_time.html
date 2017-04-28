@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Service_Wanhua | InfiArk</title>
+	
+	<!-- title CSS -->
+	<!-- <link href="css/title.css" rel="stylesheet"> -->
+	
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+
+	<!-- responsive CSS -->
+	<link href="../css/responsive.css" rel="stylesheet">
+	
+	<!-- form CSS -->
+	<link href="../css/multiple-select.css" rel="stylesheet">
+
+<!-- 	<link href="week.css" rel="stylesheet"> -->	
+	
+    <!-- Custom Fonts -->
+   <!--  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>				
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="dropdown active">
+						<a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>					
+						<ul class="dropdown-menu">
+							<li>
+								<a href="../service.html">Intelligent Traffic Prediction Service</a>
+							</li>
+						</ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+				<a class="navbar-brand" href="../index.html">
+					<img src="../images/logo2.png" alt="logo" style="width: 200px;">
+				</a>
+				
+            </div>
+        </div>
+        <!-- /.row -->
+		<br><br>
+		<section id="home-slider">
+			<div class="container">				
+				<div class="row">
+					<h1 class="title text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">萬華智慧交通預測服務</h1>
+					<p class="text-center wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms" style="font-size:120%;">Wanhua Intelligent Traffic Prediction Service</p>
+				</div>
+				<div class="row">
+
+					<div class="col-lg-12">
+						<h2 class="page-header"><text id="result"></text>（未來一周）- 請輸入查詢條件 / <a href="service_wanhua.php">其他萬華路段</a> / <a href="../service.html">其他行政區域</a></h2>
+					</div>
+					<form name="myForm" action="wanhua.php" method="POST">
+						<div class="col-lg-1 text-center" style="margin: 15px;">					
+							<label for="weekday" class="control-label">星期</label>
+						</div>						
+						<div class="col-lg-4" style="margin: 10px;">					
+							<select name="weekday" id="weekday" class="form-control" required="required">
+								<option value="" disabled="" selected="">選擇星期</option>
+								<option value="0">星期一</option>
+								<option value="1">星期二</option>
+								<option value="2">星期三</option>
+								<option value="3">星期四</option>
+								<option value="4">星期五</option>
+								<option value="5">星期六</option>
+								<option value="6">星期日</option>							
+							</select>
+						</div>					
+	
+						<div class="col-lg-1 text-center" style="margin: 15px;">					
+							<label for="time" class="control-label">時間</label>
+						</div>						
+						<div class="col-lg-4" style="margin: 10px;">						
+							<select name="time" id="time" class="form-control" required="required">
+								<option value="" disabled="" selected="">選擇時間</option>
+								<option value="0">00:00</option>
+								<option value="1">01:00</option>
+								<option value="2">02:00</option>
+								<option value="3">03:00</option>
+								<option value="4">04:00</option>
+								<option value="5">05:00</option>
+								<option value="6">06:00</option>
+								<option value="7">07:00</option>
+								<option value="8">08:00</option>
+								<option value="9">09:00</option>
+								<option value="10">10:00</option>
+								<option value="11">11:00</option>
+								<option value="12">12:00</option>
+								<option value="13">13:00</option>
+								<option value="14">14:00</option>
+								<option value="15">15:00</option>
+								<option value="16">16:00</option>
+								<option value="17">17:00</option>
+								<option value="18">18:00</option>
+								<option value="19">19:00</option>
+								<option value="20">20:00</option>
+								<option value="21">21:00</option>
+								<option value="22">22:00</option>
+								<option value="23">23:00</option>
+							</select>
+						</div>
+
+
+						<div class="controls col-lg-12 text-center" style="height:60px;margin-top:25px;">
+							<input name="road" id="submit" class="submit" style="width:22%;" type="submit" value="送出" title = "送出" onclick="iii()">
+						</div>	
+					</form>
+					
+				</div>
+			</div>
+		</section>
+		<!--/#recent-projects-->
+	     
+		<!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+					<p>&copy; InfiArk Technology 2016. All Rights Reserved.</p>
+					<p>Crafted by <a href="../index.html">無限方舟科技股份有限公司</a></p>				
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+		var road = sessionStorage["road"];
+		document.getElementById("result").innerHTML = road;
+	</script>
+
+	<script type="text/javascript">
+		function iii(){	
+			var road = sessionStorage["road"];		
+			document.getElementById("submit").value = road;
+			//alert(document.getElementById("submit").value);		
+		}
+	</script>	
+
+</body>
+
+</html>

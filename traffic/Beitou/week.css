@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Dax:400,900");
+
+.middle {
+	width: 100%;
+	text-align: center;
+}
+
+.middle input[type="radio"] {
+	display: none;
+}
+/*if colorful 註解 */
+.middle input[type="radio"]:checked + .box {
+	background-color: #007e90;
+}
+.middle input[type="radio"]:checked + .box span {
+	color: #fff;
+	transform: translateY(50px);
+	font-size: 30px;	
+}
+.middle input[type="radio"]:checked + .box span:before {
+	transform: translateY(0px);
+	opacity: 1;
+}
+.middle .box {
+	width: 149px;
+	height: 149px;
+	/* background-color: #fff; */
+/* 	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border-radius: 75px; */
+  
+/* 	transition: all 250ms ease;
+	will-change: transition;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	font-family: "Dax", sans-serif;
+	font-weight: 900; */
+
+	position: relative;
+	padding: 10px 40px;
+	margin: 0px 10px 10px 0px;
+	float: left;
+	border-radius: 10px;
+	font-family: 'Dax', sans-serif;
+	font-weight: 900;
+	color: #007e90;
+	text-decoration: none;	
+}
+
+.middle .box:active {
+	transform: translateY(10px);
+}
+.middle .box span {
+	position: absolute;
+	transform: translate(0, 60px);
+	left: 0;
+	right: 0;
+	transition: all 300ms ease;
+	font-size: 1.5em;
+	user-select: none;
+	color: #007e90;/* if colorful #fff */
+}
+
+.middle2 input[type="radio"]:checked + .box2 {
+	background-color: #007e90;
+}
+.middle2 input[type="radio"]:checked + .box2 span {
+	color: #fff;
+	transform: translateY(30px);
+	font-size: 45px;	
+}
+.middle2 input[type="radio"]:checked + .box2 span:before {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.middle2 {
+	width: 100%;
+	text-align: center;
+}
+
+.middle2 input[type="radio"] {
+	display: none;
+}
+
+.middle2 .box2 {
+	width: 120px;
+	height: 120px;
+	position: relative;
+	padding: 10px 40px;
+	margin: 0px 10px 10px 0px;
+	float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-weight: 900;
+	color: #007e90;
+	text-decoration: none;	
+}
+
+.middle2 .box2:active {
+	transform: translateY(10px);
+}
+.middle2 .box2 span {
+	position: absolute;
+	transform: translate(0, 60px);
+	left: 0;
+	right: 0;
+	transition: all 300ms ease;
+	font-size: 1.5em;
+	user-select: none;
+	color: #007e90;/* if colorful #fff */
+}
+
+/*if colorful 解除註解 */
+/* .red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+} */
+
+/* .orange
+{
+	background-color: #FFA500;
+	border-bottom: 5px solid #e59400;
+	text-shadow: 0px -2px #e59400;
+} */
+
+/* .yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
+} */
+
+/* .green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+} */
+
+/* .blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
+} */
+
+/* .indigo
+{
+	background-color: #4B0082;
+	border-bottom: 5px solid #3c0068;
+	text-shadow: 0px -2px #3c0068;
+} */
+
+/* .purple
+{
+	background-color: #800880;
+	border-bottom: 5px solid #590559;
+	text-shadow: 0px -2px #590559;
+} */
+
